@@ -1,0 +1,25 @@
+# キーボード定義を読み込む
+include "109.nodoka"					# 109 キーボード設定
+include "hisong.nodoka"					# 自分用キーボード設定
+
+# グローバルキーマップ
+keymap Global
+ key *IC- =								# デフォルトモディファイヤの変更
+ mod control += 英数					# モディファイヤの登録
+ key *英数 = *LeftControl				# [CapsLock]を[左Ctrl]に変更
+ key C-*S-H = *S-←						# [Ctrl+H]を[←]に変更
+ key C-*S-J = *S-↓						# [Ctrl+J]を[↓]に変更
+ key C-*S-K = *S-↑						# [Ctrl+K]を[↑]に変更
+ key C-*S-L = *S-→						# [Ctrl+L]を[→]に変更
+ key C-*S-Y = *S-Insert					# [Ctrl+Y]を[Insert]に変更
+ key C-*S-U = *S-Home					# [Ctrl+U]を[Home]に変更
+ key C-*S-O = *S-End					# [Ctrl+O]を[End]に変更
+ key C-*S-N = *S-Delete					# [Ctrl+N]を[Delete]に変更
+ key C-*S-D = *S-BackSpace				# [Ctrl+D]を[BackSpace]に変更
+ key C-*S-Semicolon = *S-Enter			# [Ctrl+;]を[Enter]に変更
+ key ReverseSolidus = S-ReverseSolidus	# [バックスラッシュ]を[_]に変更
+ key C-A-D = &DescribeBindings			# 現在のキーマップのログ出力
+
+window Vim /gvim\.exe/ : MyKey
+window Cmd /cmd\.exe/ : MyKey
+window TeraTerm /ttermpro\.exe/ : MyKey
