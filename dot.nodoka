@@ -7,6 +7,7 @@ keymap Global
  key *IC- =								# デフォルトモディファイヤの変更
  mod control += 英数					# モディファイヤの登録
  key *英数 = *LeftControl				# [CapsLock]を[左Ctrl]に変更
+ key C-*S-LeftSquareBracket = *S-Esc	# [Ctrl+[]を[Esc]に変更
  key C-*S-H = *S-←						# [Ctrl+H]を[←]に変更
  key C-*S-J = *S-↓						# [Ctrl+J]を[↓]に変更
  key C-*S-K = *S-↑						# [Ctrl+K]を[↑]に変更
@@ -19,7 +20,24 @@ keymap Global
  key C-*S-Semicolon = *S-Enter			# [Ctrl+;]を[Enter]に変更
  key ReverseSolidus = S-ReverseSolidus	# [バックスラッシュ]を[_]に変更
  key C-A-D = &DescribeBindings			# 現在のキーマップのログ出力
+# key C-*S-B = *S-←						# [Ctrl+B]を[←]に変更
+# key C-*S-N = *S-↓						# [Ctrl+N]を[↓]に変更
+# key C-*S-P = *S-↑						# [Ctrl+P]を[↑]に変更
+# key C-*S-F = *S-→						# [Ctrl+F]を[→]に変更
+# key C-*S-Y = *S-Insert					# [Ctrl+Y]を[Insert]に変更
+# key C-*S-A = *S-Home					# [Ctrl+A]を[Home]に変更
+# key C-*S-E = *S-End					# [Ctrl+E]を[End]に変更
+# key C-*S-D = *S-Delete					# [Ctrl+D]を[Delete]に変更
+# key C-*S-H = *S-BackSpace				# [Ctrl+H]を[BackSpace]に変更
+# key C-*S-M = *S-Enter					# [Ctrl+M]を[Enter]に変更
+# key C-*S-J = *S-Enter					# [Ctrl+J]を[Enter]に変更
+# key ReverseSolidus = S-ReverseSolidus	# [バックスラッシュ]を[_]に変更
+# key C-A-D = &DescribeBindings			# 現在のキーマップのログ出力
 
 window Vim /gvim\.exe/ : MyKey
+window Emacs /emacs\.exe/ : MyKey
 window Cmd /cmd\.exe/ : MyKey
+window Mintty /mintty\.exe/ : MyKey
 window TeraTerm /ttermpro\.exe/ : MyKey
+window Concole2 /Console\.exe/ : MyKey
+window Ckw /ckw\.exe/ : MyKey
