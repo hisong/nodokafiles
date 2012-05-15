@@ -15,7 +15,7 @@ keymap Global
  key C-*S-Y = *S-Insert					# [Ctrl+Y]を[Insert]に変更
  key C-*S-U = *S-Home					# [Ctrl+U]を[Home]に変更
  key C-*S-O = *S-End					# [Ctrl+O]を[End]に変更
- key C-*S-N = *S-Delete					# [Ctrl+N]を[Delete]に変更
+ key ~IC-C-*S-N = *S-Delete				# [Ctrl+N]を[Delete]に変更
  key C-*S-D = *S-BackSpace				# [Ctrl+D]を[BackSpace]に変更
  key C-*S-Semicolon = *S-Enter			# [Ctrl+;]を[Enter]に変更
  key ReverseSolidus = S-ReverseSolidus	# [バックスラッシュ]を[_]に変更
