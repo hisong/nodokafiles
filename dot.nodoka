@@ -39,5 +39,5 @@ window Emacs /emacs\.exe/ : MyKey
 window Cmd /cmd\.exe/ : MyKey
 window Mintty /mintty\.exe/ : MyKey
 window TeraTerm /ttermpro\.exe/ : MyKey
-window Concole2 /Console\.exe/ : MyKey
+window Console2 /Console\.exe/ : MyKey
 window Ckw /ckw\.exe/ : MyKey
