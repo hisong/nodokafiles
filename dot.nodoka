@@ -1,38 +1,74 @@
 # キーボード定義を読み込む
-include "109.nodoka"					# 109 キーボード設定
-include "hisong.nodoka"					# 自分用キーボード設定
+# 109 キーボード設定
+include "109.nodoka"
+# 自分用キーボード設定
+include "hisong.nodoka"
 
 # グローバルキーマップ
 keymap Global
- key *IC- =								# デフォルトモディファイヤの変更
- mod control += 英数					# モディファイヤの登録
- key *英数 = *LeftControl				# [CapsLock]を[左Ctrl]に変更
- key C-*S-LeftSquareBracket = *S-Esc	# [Ctrl+[]を[Esc]に変更
- key C-*S-H = *S-←						# [Ctrl+H]を[←]に変更
- key C-*S-J = *S-↓						# [Ctrl+J]を[↓]に変更
- key C-*S-K = *S-↑						# [Ctrl+K]を[↑]に変更
- key C-*S-L = *S-→						# [Ctrl+L]を[→]に変更
- key C-*S-Y = *S-Insert					# [Ctrl+Y]を[Insert]に変更
- key C-*S-U = *S-Home					# [Ctrl+U]を[Home]に変更
- key C-*S-O = *S-End					# [Ctrl+O]を[End]に変更
- key ~IC-C-*S-N = *S-Delete				# [Ctrl+N]を[Delete]に変更
- key C-*S-D = *S-BackSpace				# [Ctrl+D]を[BackSpace]に変更
- key C-*S-Semicolon = *S-Enter			# [Ctrl+;]を[Enter]に変更
- key ReverseSolidus = S-ReverseSolidus	# [バックスラッシュ]を[_]に変更
- key C-A-D = &DescribeBindings			# 現在のキーマップのログ出力
-# key C-*S-B = *S-←						# [Ctrl+B]を[←]に変更
-# key C-*S-N = *S-↓						# [Ctrl+N]を[↓]に変更
-# key C-*S-P = *S-↑						# [Ctrl+P]を[↑]に変更
-# key C-*S-F = *S-→						# [Ctrl+F]を[→]に変更
-# key C-*S-Y = *S-Insert					# [Ctrl+Y]を[Insert]に変更
-# key C-*S-A = *S-Home					# [Ctrl+A]を[Home]に変更
-# key C-*S-E = *S-End					# [Ctrl+E]を[End]に変更
-# key C-*S-D = *S-Delete					# [Ctrl+D]を[Delete]に変更
-# key C-*S-H = *S-BackSpace				# [Ctrl+H]を[BackSpace]に変更
-# key C-*S-M = *S-Enter					# [Ctrl+M]を[Enter]に変更
-# key C-*S-J = *S-Enter					# [Ctrl+J]を[Enter]に変更
-# key ReverseSolidus = S-ReverseSolidus	# [バックスラッシュ]を[_]に変更
-# key C-A-D = &DescribeBindings			# 現在のキーマップのログ出力
+
+# デフォルトモディファイヤの変更 → 登録
+key *IC- =
+mod control += 英数
+
+# [CapsLock] -> [左Ctrl]
+key *英数 = *LeftControl
+
+# モディファイヤとの組み合わせキー登録
+# [ -> Esc
+key C-*S-LeftSquareBracket = *S-Esc
+
+# HJKL -> ←↓↑→
+key C-*S-H = *S-←
+key C-*S-J = *S-↓
+key C-*S-K = *S-↑
+key C-*S-L = *S-→
+
+# Y -> Insert
+key C-*S-Y = *S-Insert
+
+# U -> Home
+key C-*S-U = *S-Home
+
+# O -> End
+key C-*S-O = *S-End
+
+# N -> Delete
+key ~IC-C-*S-N = *S-Delete
+
+# D -> BackSpace
+key C-*S-D = *S-BackSpace
+
+# ; -> Enter
+key C-*S-Semicolon = *S-Enter
+
+# \ -> _
+key ReverseSolidus = S-ReverseSolidus	# [バックスラッシュ]を[_]に変更
+
+# BNPF -> ←↓↑→
+#key C-*S-B = *S-←
+#key C-*S-N = *S-↓
+#key C-*S-P = *S-↑
+#key C-*S-F = *S-→
+
+# A -> Home
+#key C-*S-A = *S-Home
+
+# E -> End
+#key C-*S-E = *S-End
+
+# D -> Delete
+#key C-*S-D = *S-Delete
+
+# H -> BackSpace
+#key C-*S-H = *S-BackSpace
+
+# MJ -> Enter
+#key C-*S-M = *S-Enter
+#key C-*S-J = *S-Enter
+
+# 現在のキーマップのログ出力
+key C-A-D = &DescribeBindings
 
 window Vim /gvim\.exe/ : MyKey
 window Emacs /emacs\.exe/ : MyKey
