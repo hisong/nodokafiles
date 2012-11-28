@@ -11,7 +11,7 @@ keymap Global
 key *IC- =
 mod control += 英数
 
-# [CapsLock] -> [左Ctrl]
+# CapsLock -> 左Ctrl
 key *英数 = *LeftControl
 
 # モディファイヤとの組み合わせキー登録
@@ -43,7 +43,7 @@ key C-*S-D = *S-BackSpace
 key C-*S-Semicolon = *S-Enter
 
 # \ -> _
-key ReverseSolidus = S-ReverseSolidus	# [バックスラッシュ]を[_]に変更
+key ReverseSolidus = S-ReverseSolidus
 
 # BNPF -> ←↓↑→
 #key C-*S-B = *S-←
