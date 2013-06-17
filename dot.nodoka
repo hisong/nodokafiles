@@ -70,6 +70,7 @@ key ReverseSolidus = S-ReverseSolidus
 # 現在のキーマップのログ出力
 key C-A-D = &DescribeBindings
 
+window VBox /VirtualBox\.exe/ : MyKey
 window Vim /gvim\.exe/ : MyKey
 window Emacs /emacs\.exe/ : MyKey
 window Cmd /cmd\.exe/ : MyKey
